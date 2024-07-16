@@ -1,0 +1,366 @@
+/* header {
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: whitesmoke;
+    font-size: 2rem;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+
+
+
+    border-bottom: solid 1px whitesmoke;
+    justify-content: space-between;
+    padding: 6px 2rem;
+    width: 100%;
+    height: 68px;
+}
+
+header .title {
+
+    font-size: 2rem;
+    text-decoration: #FF0000 underline ;
+    padding-bottom: 0rem;
+    text-decoration-thickness: 1px;
+}
+
+header span {
+    color: #FF0000;
+}
+
+.header-Bg{
+    position: absolute;
+
+    background-color: black;
+    height: 68px;
+    width: 100%;
+} */
+
+main {
+    overflow: hidden;
+
+    background-color: #161616;
+    color: whitesmoke;
+}
+
+.firstview {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    background-size: cover;
+    background-position: center center;
+
+    animation: switchImg 20s infinite;
+}
+
+.fstv_title {
+    z-index: 6;
+
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 160px;
+    line-height: 12rem;
+    color: whitesmoke;
+    position: absolute;
+    top: 47%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.fstv_subtitle {
+    white-space: nowrap;
+    z-index: 5;
+
+    line-height: 12rem;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.8rem;
+    color: #7CFFF7;
+    position: absolute;
+    top: 67%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+/* .triangle {
+    background-color: white;
+    width: 40rem;
+    height: 35rem;
+    clip-path: polygon(100% 100%,50% 0, 0 100%);
+
+    position: absolute;
+    top: 70%;
+    left: 74%;
+}
+
+.triangle-aria{
+    position: relative;
+
+}
+
+ */
+.main-padding {
+    padding: 0 96px;
+}
+
+.rd-2 {
+    background-color: #222222;
+    color: whitesmoke;
+    margin: 104px 0 0 0;
+    height: 300px;
+}
+
+.rd-2 h2 {
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6rem;
+
+    line-height: 5rem;
+}
+
+.rd-2 p {
+    font-weight: 100;
+    font-size: 2.5rem;
+}
+
+.rd-2 span {
+    color: #DF5050;
+}
+
+.under {
+    display: flex;
+    align-items: flex-end;
+}
+
+.underline-white-1px {
+    border-bottom: whitesmoke 1px solid;
+    padding-top: 1rem
+}
+
+.about {
+    margin-top: 16rem;
+
+}
+
+.irasuto-red {
+    writing-mode: vertical-rl;
+    letter-spacing: 0.8rem;
+    height: 36rem;
+    position: absolute;
+    font-size: 3rem;
+    top: 80rem;
+    right: 4rem;
+    padding-top: 1.5rem;
+    background-color: #DF5050;
+    color: whitesmoke;
+}
+
+.about-ryou {
+    justify-content: space-between;
+}
+
+
+
+
+.ILLUSTRATORAS {
+    margin-top: 4rem;
+}
+
+.li-title {
+    font-size: 3rem;
+}
+
+.more {
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.more a {
+    display: flex;
+    align-items: center;
+}
+
+.more a img {
+    margin-left: 1rem;
+}
+
+li {
+    margin-bottom: 4rem;
+    border-bottom: 1px solid whitesmoke;
+}
+
+/* footer{
+
+margin-top: 15rem;
+text-align: center;
+} */
+
+.hoimg {
+    position: absolute;
+    right: 0;
+    bottom: -4rem;
+    opacity: 0;
+    transition: 0.4s all;
+}
+
+
+
+
+
+
+
+.hodr {
+    opacity: 0;
+}
+
+.homume {
+    opacity: 0;
+}
+
+.hoasute {
+    opacity: 0;
+}
+
+.hoao {
+    opacity: 0;
+}
+
+
+.jump {
+    z-index: 1000;
+}
+
+.jump-mume:hover~.homume {
+    opacity: 0.8;
+}
+.jump-dr:hover~.hodr {
+    opacity: 0.8;
+}
+.jump-asute:hover~.hoasute {
+    opacity: 0.8;
+}
+.jump-ao:hover~.hoao {
+    opacity: 0.8;
+}
+
+.dr {
+    position: relative;
+}
+.mume {
+    position: relative;
+}
+.asute {
+    position: relative;
+}
+.ao {
+    position: relative;
+}
+
+.dr .jump {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.mume .jump {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.asute .jump {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.ao .jump {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+.img1 {
+    background-image: url(indexImg/mumena_sunflower.jpeg);
+}
+
+.img2 {
+    background-image: url(indexImg/dr_okirarenai.jpeg);
+}
+
+.img3 {
+    background-image: url(indexImg/asuteroId_wall.jpeg);
+}
+
+.img4 {
+    background-image: url(indexImg/ao_1_nanamain.png);
+}
+
+
+@keyframes switchImg {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.bg:nth-of-type(1) {
+    animation-delay: 0s;
+}
+
+.bg:nth-of-type(2) {
+    animation-delay: 5s;
+}
+
+.bg:nth-of-type(3) {
+    animation-delay: 10s;
+}
+
+.bg:nth-of-type(4) {
+    animation-delay: 15s;
+}

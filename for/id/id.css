@@ -1,0 +1,215 @@
+html {
+    color: whitesmoke;
+}
+
+.dflex {
+    background-image: url(./img/asuteroId_wall.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-x: -25rem;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+
+
+.back a {
+
+
+
+    display: inline-block;
+    background-color: #DF5050;
+    padding: 0 2rem;
+    font-size: 1.5rem;
+
+
+    margin-top: 90vh;
+
+
+}
+
+.img {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #222222;
+    /* padding-left: 4rem;
+    padding-right: 4rem; */
+    width: 50vw;
+    height: 100vh;
+
+}
+
+
+.right {
+    margin-left: 4rem;
+}
+
+.right h1 {
+    font-size: 3rem;
+    margin-top: 10rem;
+
+
+}
+
+.about {
+    position: relative;
+    margin-bottom: 30rem;
+
+}
+
+h1 {
+    margin-bottom: 3rem;
+
+
+}
+
+.about p {
+    line-height: 2rem;
+
+}
+
+h3 {
+    font-size: 12rem;
+    opacity: 0.2;
+    color: #d9d9d9;
+    position: absolute;
+    z-index: 400;
+    rotate: calc(90deg);
+}
+
+.about h3 {
+    right: 22vw;
+}
+
+.illust h3 {
+    top: 160vh;
+    right: 8vw;
+}
+
+.container {
+    position: relative;
+    z-index: 1000;
+    max-width: 40vw;
+    max-height: 60vw;
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    
+    gap: 15px;
+
+    grid-template-areas: 
+    "A A B"
+    "C D E"
+    "F D G"
+    "eX eX G";
+}
+
+
+.item1{
+    grid-area:A;
+}
+.item2{
+    grid-area:A;
+}
+.item3{
+    grid-area:B;
+}
+.item4{
+    grid-area:C;
+}
+.item5{
+    grid-area:D;
+}
+.item6{
+    grid-area:E;
+}
+.item7{
+    grid-area:F;
+}
+.item8{
+    grid-area:D;
+}
+.item9{
+    grid-area:G;
+}
+.item10{
+    grid-area:eX;
+}
+.item11{
+    grid-area:eX;
+}
+.item12{
+    grid-area:G;
+}
+
+
+.andmore{
+
+    display: inline-block;
+
+    margin-top: 5rem;
+    position: relative;
+
+}
+
+.andmore p{
+
+    display: inline-block;
+    background-color: #DF5050;
+    padding: 1rem 2rem;
+}
+
+.andmore .jump{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.jump {
+    z-index: 1000;
+}
+
+
+.bgchange:hover{
+    background-color: whitesmoke;
+    color: #DF5050;
+    transition: 0.8s all;
+}
+.bg2:hover + .bgchange2{
+    background-color: whitesmoke;
+    color: #DF5050;
+    transition: 0.8s all;
+}
+
+.border{
+	position: relative;
+	font-size: 18px;
+}
+
+.border:before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	border-bottom: solid 2px #DF5050;
+	animation: border_anim 0.8s linear forwards;
+}
+
+@keyframes border_anim {
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 100%;
+	}
+}
+
+
+.right{
+    margin-right: 3rem;
+}
